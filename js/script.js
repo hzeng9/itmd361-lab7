@@ -1,14 +1,13 @@
 function init(){
-  let button = document.getElementById('entrybutton');
+  var button = document.getElementById('entrybutton');
 
   function alertButton(){
-    let text = document.getElementById("entryinput").value;
-    document.getElementById('textoutput').innerText = text;
-    alert("Hao Yuan Zeng: " + text);
+    var text = document.getElementById('entryinput');
+    document.getElementById('textoutput').innerText = text.value;
+    alert("Hao Yuan Zeng: " + text.value);
   }
 
   button.addEventListener('click', alertButton);
- 
 }
 
 window.addEventListener('load', init);
